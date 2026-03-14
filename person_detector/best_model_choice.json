@@ -1,0 +1,25 @@
+{
+  "model_id": "yolo11m.pt",
+  "backend": "YOLO",
+  "score": 0.75,
+  "f1": 1.0,
+  "avg_iou": 1.0,
+  "avg_ms": 145.4,
+  "top3_models": [
+    {
+      "name": "yolo11m",
+      "backend": "YOLO",
+      "model_id": "yolo11m.pt"
+    },
+    {
+      "name": "yolo11s",
+      "backend": "YOLO",
+      "model_id": "yolo11s.pt"
+    },
+    {
+      "name": "yolov8s",
+      "backend": "YOLO",
+      "model_id": "yolov8s.pt"
+    }
+  ]
+}
