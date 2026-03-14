@@ -1,0 +1,80 @@
+{
+  "architecture": "BiLSTM",
+  "n_features": 15,
+  "T_fixed": 20,
+  "hidden": 64,
+  "n_layers": 2,
+  "dropout": 0.3,
+  "bidirectional": true,
+  "threshold": 0.5,
+  "best_epoch": 4,
+  "best_val_f1": 0.8462,
+  "feature_cols": [
+    "left_elbow_angle",
+    "right_elbow_angle",
+    "mean_elbow_angle",
+    "elbow_symmetry",
+    "left_hip_angle",
+    "right_hip_angle",
+    "body_straightness",
+    "shoulder_height_norm",
+    "hip_height_norm",
+    "shoulder_velocity",
+    "hip_velocity",
+    "elbow_angle_velocity",
+    "wrist_width_norm",
+    "shoulder_width_norm",
+    "nose_height_norm"
+  ],
+  "feat_mean": [
+    147.2523193359375,
+    147.884765625,
+    147.47669982910156,
+    12.001997947692871,
+    149.4132080078125,
+    149.29331970214844,
+    0.043202001601457596,
+    0.4738849997520447,
+    0.5246520042419434,
+    0.001547000021673739,
+    0.0016410000389441848,
+    0.0767500028014183,
+    0.05814899876713753,
+    0.05514099821448326,
+    0.5186989903450012
+  ],
+  "feat_std": [
+    29.95311737060547,
+    28.157560348510742,
+    27.56569480895996,
+    14.75487232208252,
+    25.117462158203125,
+    22.063583374023438,
+    0.03884299844503403,
+    0.14517000317573547,
+    0.1210860013961792,
+    0.07709400355815887,
+    0.056758999824523926,
+    22.310924530029297,
+    0.04705699905753136,
+    0.034967001527547836,
+    0.14952200651168823
+  ],
+  "label_map": {
+    "correct": 1,
+    "wrong": 0
+  },
+  "split": {
+    "train_size": 109,
+    "val_size": 24,
+    "test_size": 24,
+    "seed": 42
+  },
+  "dataset_stats": {
+    "N": 157,
+    "T": 20,
+    "F": 15,
+    "n_correct": 76,
+    "n_wrong": 81
+  }
+}

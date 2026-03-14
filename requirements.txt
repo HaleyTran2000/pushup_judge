@@ -1,0 +1,9 @@
+# Requirements for the real-time push-up judge
+# Install with:  pip install -r requirements.txt
+
+torch>=2.2.0
+torchvision>=0.17.0
+ultralytics>=8.2.0          # YOLO person detector + pose estimator
+opencv-python>=4.9.0        # webcam capture + display
+scipy>=1.12.0               # signal.find_peaks, interp1d
+numpy>=1.26.0
